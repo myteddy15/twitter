@@ -52,46 +52,63 @@
 				font-size: 1.2rem;
 				text-align: center;
 			}
+			#logo
+			{
+				color: blue;
+				font-size: 2.4rem;
+			}
+			#link
+			{
+				margin-left: 1rem;
+				color: white !important;
+			}
+			#signup
+			{
+				font-weight: bold;
+				font-size: 1.3rem;
+				color: black;
+			}
 		</style>
 		<body>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+				<!-- Include all compiled plugins (below), or include individual files as needed -->
+			<script src="js/bootstrap.min.js"></script>
 		<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-	  
-      <a class="navbar-brand" href="#">Home</a>
-	</div>
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><span class="glyphicon glyphicon-heart" id="logo"></span></a>
+			</div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="#">About<span class="sr-only">(current)</span></a></li>
-        <li></li>
-        
-      </ul>
-      
-      <ul class="nav navbar-nav navbar-right">
-        <li></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Langauge: English<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li><a href="#">Home<span class="sr-only">(current)</span></a></li>
+				<li><a href="#">About<span class="sr-only">(current)</span></a></li>
+				<li></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Langauge: English<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Filipino</a></li>
+							<li><a href="#">Chinese</a></li>
+							<li><a href="#">Russian</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Bisaya</a></li>
+						</ul>
+				</li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+		</nav>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-1">
@@ -164,7 +181,7 @@
 									<div class="col-md-7">
 										<div class="well">
 											<div class="row">
-												<div class="col-md-12" id= "signup">
+												<div class="col-md-12">
 													<p>
 														New to Twitter? <a href="">Sign up</a>
 													</p>
@@ -195,7 +212,7 @@
 												<div class="col-md-5">
 												</div>
 												<div class="col-md-7">
-													<button class="btn btn-warning btn-block">Sign-up</button>
+													<button class="btn btn-warning btn-block" id="signup">Sign-up for Twitter</button>
 												</div>
 											</div>
 										</div>
@@ -209,14 +226,10 @@
 				</div>
 			</div>
 			<div class="row">
-					<div class="col-md-2">
-					</div>
-					<div class="col-md-8" id="bottom">
-						<a href="">About</a> <a href="">Help</a> <a href="">Blog</a> <a href="">Status</a> <a href="">Jobs</a> <a href="">Terms</a> <a href="">Privacy</a> <a href="">Cookies</a> <a href="">Ads info</a> <a href="">Brand</a> <a href="">Advertise</a> <a href="">Business</a> <a href="">Media</a> <a href="">Developers</a> <a href="">Directory</a> <a href="">&copy 2015 Twitter</a>
-					</div>
-					<div class="col-md-2">
-					</div>
+				<div class="col-md-12" id="bottom">
+					<a href="" id="link">About</a><a href="" id="link">Help</a><a href="" id="link">Blog</a><a href="" id="link">Status</a><a href="" id="link">Jobs</a><a href="" id="link">Terms</a><a href="" id="link">Privacy</a><a href="" id="link">Cookies</a><a href="" id="link">Ads info</a><a href="" id="link">Brand</a><a href="" id="link">Advertise</a><a href="" id="link">Business</a><a href="" id="link">Media</a><a href="" id="link">Developers</a><a href="" id="link">Directory</a><a href="" id="link">&copy 2015 Twitter</a>
 				</div>
+			</div>
 		</body>
 	</head>
 </html>
